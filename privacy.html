@@ -41,7 +41,7 @@
 <p>Для регистрации нужны адрес электронной почты и пароль. Вход обслуживает сервис Google Firebase Authentication. В базе Google Firebase Firestore хранится запись о пробном периоде: ваш адрес почты, дата начала пробного периода и дата последнего входа. Эта запись нужна, чтобы бесплатный период можно было получить только один раз. Серверы Google могут находиться за пределами вашей страны, в том числе в США.</p>
 
 <h2>3а. Записи движений для улучшения распознавания</h2>
-<p>Только если в профиле включено «Помогать улучшать распознавание» (по умолчанию выключено) и вы вошли в аккаунт. После заданий-связок приложение отправляет запись движений: координаты точек тела по времени, какое было задание, стойку, ракурс камеры, время записи и версию iOS. Без видео, без фото и без вашего имени. Запись хранится в Google Firebase Firestore вместе с идентификатором вашего аккаунта и используется только для того, чтобы BOXfit лучше распознавал удары. Отправку можно выключить в любой момент тем же переключателем. Чтобы удалить уже отправленные записи, напишите нам.</p>
+<p>Только если в профиле включено «Помогать улучшать распознавание» (по умолчанию выключено) и вы вошли в аккаунт. После заданий-связок приложение отправляет запись движений: координаты точек тела по времени, какое было задание, стойку, ракурс камеры, время записи и версию iOS. Без видео, без фото и без вашего имени. Запись хранится в Google Firebase Firestore вместе с идентификатором вашего аккаунта и используется только для того, чтобы BOXfit лучше распознавал удары. Отправку можно выключить в любой момент тем же переключателем — приложение предложит удалить уже отправленные с этого телефона записи. При удалении аккаунта они удаляются автоматически.</p>
 
 <h2>4. Apple «Здоровье»</h2>
 <p>С вашего разрешения BOXfit записывает в «Здоровье» тренировки: время и примерные калории. Приложение ничего не читает из «Здоровья». Данные «Здоровья» не используются для рекламы и не передаются третьим лицам.</p>
@@ -71,7 +71,7 @@
   <li>Аккаунт: «Профиль» → «Удалить аккаунт». Аккаунт в Firebase удаляется. Запись о пробном периоде остаётся, чтобы бесплатный период нельзя было получить повторно. Если хотите удалить и её, напишите нам.</li>
   <li>Данные на телефоне: удалите приложение. Учтите, что они могут остаться в ваших резервных копиях iPhone.</li>
   <li>Записи из «Здоровья» удаляются в приложении «Здоровье».</li>
-  <li>Отправленные записи движений (п. 3а): напишите нам — удалим.</li>
+  <li>Отправленные записи движений (п. 3а): удаляются вместе с аккаунтом или при выключении «Помогать улучшать распознавание». Записи, отправленные с другого телефона, удалим по вашему письму.</li>
 </ul>
 
 <h2>11. Дети и подростки</h2>
@@ -111,7 +111,7 @@
 <p>To register you provide an email address and a password. Sign-in is handled by Google Firebase Authentication. Google Firebase Firestore stores a trial record: your email address, the trial start date and the date of your last sign-in. It ensures the free trial can only be used once. Google servers may be located outside your country, including in the USA.</p>
 
 <h2>3a. Motion recordings to improve recognition</h2>
-<p>Only if “Help improve recognition” is turned on in your profile (it is off by default) and you are signed in. After combo drills the app sends a motion recording: body keypoint coordinates over time, which drill it was, your stance, the camera angle, the recording time and the iOS version. No video, no photos and no name. The recording is stored in Google Firebase Firestore together with your account ID and is used only to make BOXfit better at recognizing punches. You can turn sending off at any time with the same switch. To delete recordings already sent, email us.</p>
+<p>Only if “Help improve recognition” is turned on in your profile (it is off by default) and you are signed in. After combo drills the app sends a motion recording: body keypoint coordinates over time, which drill it was, your stance, the camera angle, the recording time and the iOS version. No video, no photos and no name. The recording is stored in Google Firebase Firestore together with your account ID and is used only to make BOXfit better at recognizing punches. You can turn sending off at any time with the same switch — the app will offer to delete the recordings already sent from this phone. When you delete your account, they are deleted automatically.</p>
 
 <h2>4. Apple Health</h2>
 <p>With your permission BOXfit writes workouts (duration and estimated calories) to Apple Health. The app does not read any data from Health. Health data is never used for advertising and never shared with third parties.</p>
@@ -141,7 +141,7 @@
   <li>Account: Profile → Delete account. Your Firebase account is deleted. The trial record is kept so the free trial cannot be reused. Email us if you want it deleted as well.</li>
   <li>Data on your phone: delete the app. Note that it may remain in your iPhone backups.</li>
   <li>Workouts written to Health can be deleted in the Health app.</li>
-  <li>Motion recordings you sent (section 3a): email us and we will delete them.</li>
+  <li>Motion recordings you sent (section 3a): deleted together with your account or when you turn off “Help improve recognition”. Recordings sent from another phone will be deleted if you email us.</li>
 </ul>
 
 <h2>11. Children and teenagers</h2>
