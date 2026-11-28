@@ -21,11 +21,11 @@
 
 <section id="ru">
 <h1>Политика конфиденциальности BOXfit</h1>
-<p class="muted">Действует с 27 ноября 2026 года</p>
+<p class="muted">Действует с 28 ноября 2026 года</p>
 
-<p>BOXfit — приложение-тренер по боксу и физической подготовке. Здесь описано, какие данные использует приложение, где они хранятся и как их удалить. Коротко: почти всё хранится только на вашем телефоне, видео с камеры никуда не отправляется, рекламы и слежки нет.</p>
+<p>BOXfit — приложение-тренер по боксу и физической подготовке. Здесь описано, какие данные использует приложение, где они хранятся и как их удалить. Коротко: данные хранятся на вашем телефоне и копией в вашем аккаунте (п. 3б), видео с камеры никуда не отправляется, рекламы и слежки нет.</p>
 
-<h2>1. Что хранится только на вашем телефоне</h2>
+<h2>1. Что хранится на вашем телефоне</h2>
 <ul>
   <li>Профиль: имя, возраст, рост, вес, уровень, стойка, цель, место тренировок, инвентарь дома.</li>
   <li>Ограничения по здоровью, которые вы отметили (плечо, запястье/локоть, спина, колено), — чтобы тренер не давал опасных упражнений.</li>
@@ -42,6 +42,9 @@
 
 <h2>3а. Записи движений для улучшения распознавания</h2>
 <p>Только если в профиле включено «Помогать улучшать распознавание» (по умолчанию выключено) и вы вошли в аккаунт. После заданий-связок приложение отправляет запись движений: координаты точек тела по времени, какое было задание, стойку, ракурс камеры, время записи и версию iOS. Без видео, без фото и без вашего имени. Запись хранится в Google Firebase Firestore вместе с идентификатором вашего аккаунта и используется только для того, чтобы BOXfit лучше распознавал удары. Отправку можно выключить в любой момент тем же переключателем — приложение предложит удалить уже отправленные с этого телефона записи. При удалении аккаунта они удаляются автоматически.</p>
+
+<h2>3б. Копия данных в аккаунте</h2>
+<p>Когда вы вошли в аккаунт, приложение хранит копию данных из п. 1 (профиль, ограничения по здоровью, историю тренировок, оценки, прогресс, разборы техники, настройки) в Google Firebase Firestore. Копия сжата, привязана к идентификатору вашего аккаунта, и прочитать её можете только вы. Она обновляется, когда данные меняются, и нужна, чтобы после смены телефона или переустановки приложения всё вернулось после входа. Записи движений и видео в копию не входят. Копия удаляется кнопкой «Удалить все данные» и при удалении аккаунта.</p>
 
 <h2>4. Apple «Здоровье»</h2>
 <p>С вашего разрешения BOXfit записывает в «Здоровье» тренировки: время и примерные калории. Приложение ничего не читает из «Здоровья». Данные «Здоровья» не используются для рекламы и не передаются третьим лицам.</p>
@@ -69,6 +72,7 @@
 <h2>10. Как удалить данные</h2>
 <ul>
   <li>Аккаунт: «Профиль» → «Удалить аккаунт». Аккаунт в Firebase удаляется. Запись о пробном периоде остаётся, чтобы бесплатный период нельзя было получить повторно. Если хотите удалить и её, напишите нам.</li>
+  <li>Копия данных в аккаунте (п. 3б): «Профиль» → «Удалить все данные» или удаление аккаунта.</li>
   <li>Данные на телефоне: удалите приложение. Учтите, что они могут остаться в ваших резервных копиях iPhone.</li>
   <li>Записи из «Здоровья» удаляются в приложении «Здоровье».</li>
   <li>Отправленные записи движений (п. 3а): удаляются вместе с аккаунтом или при выключении «Помогать улучшать распознавание». Записи, отправленные с другого телефона, удалим по вашему письму.</li>
@@ -91,11 +95,11 @@
 
 <section id="en" lang="en">
 <h1>BOXfit Privacy Policy</h1>
-<p class="muted">Effective November 27, 2026</p>
+<p class="muted">Effective November 28, 2026</p>
 
-<p>BOXfit is a boxing and fitness coaching app. This page explains what data the app uses, where it is stored and how to delete it. In short: almost everything stays on your phone, camera video is never sent anywhere, and there are no ads or tracking.</p>
+<p>BOXfit is a boxing and fitness coaching app. This page explains what data the app uses, where it is stored and how to delete it. In short: your data is stored on your phone and as a copy in your account (section 3b), camera video is never sent anywhere, and there are no ads or tracking.</p>
 
-<h2>1. Data stored only on your phone</h2>
+<h2>1. Data stored on your phone</h2>
 <ul>
   <li>Profile: name, age, height, weight, level, stance, goal, training location, home equipment.</li>
   <li>Health limitations you select (shoulder, wrist/elbow, back, knee), so the coach avoids unsafe exercises.</li>
@@ -112,6 +116,9 @@
 
 <h2>3a. Motion recordings to improve recognition</h2>
 <p>Only if “Help improve recognition” is turned on in your profile (it is off by default) and you are signed in. After combo drills the app sends a motion recording: body keypoint coordinates over time, which drill it was, your stance, the camera angle, the recording time and the iOS version. No video, no photos and no name. The recording is stored in Google Firebase Firestore together with your account ID and is used only to make BOXfit better at recognizing punches. You can turn sending off at any time with the same switch — the app will offer to delete the recordings already sent from this phone. When you delete your account, they are deleted automatically.</p>
+
+<h2>3b. Copy of your data in your account</h2>
+<p>When you are signed in, the app keeps a copy of the data from section 1 (profile, health limitations, workout history, ratings, progress, technique reviews, settings) in Google Firebase Firestore. The copy is compressed, linked to your account ID, and only you can read it. It is updated when your data changes, so that everything comes back after you sign in on a new phone or reinstall the app. Motion recordings and video are not included. The copy is deleted with “Delete all data” and when you delete your account.</p>
 
 <h2>4. Apple Health</h2>
 <p>With your permission BOXfit writes workouts (duration and estimated calories) to Apple Health. The app does not read any data from Health. Health data is never used for advertising and never shared with third parties.</p>
@@ -139,6 +146,7 @@
 <h2>10. Deleting your data</h2>
 <ul>
   <li>Account: Profile → Delete account. Your Firebase account is deleted. The trial record is kept so the free trial cannot be reused. Email us if you want it deleted as well.</li>
+  <li>Copy of your data in your account (section 3b): Profile → Delete all data, or delete your account.</li>
   <li>Data on your phone: delete the app. Note that it may remain in your iPhone backups.</li>
   <li>Workouts written to Health can be deleted in the Health app.</li>
   <li>Motion recordings you sent (section 3a): deleted together with your account or when you turn off “Help improve recognition”. Recordings sent from another phone will be deleted if you email us.</li>
